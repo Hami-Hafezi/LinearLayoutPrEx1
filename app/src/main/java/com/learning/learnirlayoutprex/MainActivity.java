@@ -14,7 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        infinitival();
 
+
+    }
+    private void infinitival() {
+        button1to2 = findViewById(R.id.buttonChangeActivity1to2);
         button1to2.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -25,10 +30,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        infinitival();
-    }
-
-    private void infinitival() {
-        button1to2 = findViewById(R.id.buttonChangeActivity1to2);
     }
 }
